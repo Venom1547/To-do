@@ -1,3 +1,4 @@
+HEAD
 Todo Application
 Overview
 The Todo Application is a web-based task management tool designed using React. It allows users to add, update, complete, and remove tasks. The application also supports search functionality using URL parameters, enabling users to filter tasks based on a search query. The app uses react-router-dom to handle routing and URL management.
