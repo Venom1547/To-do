@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+Todo Application
+Overview
+The Todo Application is a web-based task management tool designed using React. It allows users to add, update, complete, and remove tasks. The application also supports search functionality using URL parameters, enabling users to filter tasks based on a search query. The app uses react-router-dom to handle routing and URL management.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+System Design
+Frontend Components:
 
-## Available Scripts
+TodoList: The main component that manages the list of tasks, search functionality, and integration with other components.
+Todo: Displays individual todo items with options to edit, complete, or delete.
+TodoForm: A form for adding and updating todo items.
+Data Management:
 
-In the project directory, you can run:
+State Management: Tasks are managed using React's state (useState).
+Data Storage: Data is initially fetched from a data.json file and manipulated within the app.
+Search Functionality: Implemented using URL parameters to filter tasks.
+Routing:
 
-### `npm start`
+React Router: Used for managing URL parameters and enabling search functionality.
+Implementation
+Components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+TodoList: Manages the overall list of todos, handles search queries from URL parameters, and updates the URL based on user input.
+Todo: Displays each todo item and handles interactions such as marking as complete, editing, and deleting.
+TodoForm: Provides an input form for adding new todos and updating existing ones.
+Search Functionality:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Search queries are managed through URL parameters.
+Users can search for tasks, and the results are filtered based on the query.
+URL parameters update when the search is performed, allowing users to bookmark or share search results.
+Data Storage:
 
-### `npm test`
+A dummy data.json file is used as the initial data repository.
+Data can be manipulated within the app but is not persisted beyond the current session.
+Styling:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Basic styles are applied to make the application visually appealing and user-friendly.
+Setup and Running the Application
+Prerequisites
+Node.js (>=14.x)
+npm or yarn (for package management)
+Steps to Set Up
+Clone the Repository:
 
-### `npm run build`
+bash
+Copy code
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
+Install Dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+npm install
+# or
+yarn install
+Add the data.json File:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a public directory if it doesn't exist.
+Place your data.json file inside the public directory.
+Start the Development Server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm start
+# or
+yarn start
+Open the Application:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Navigate to http://localhost:3000 in your web browser.
+URL Parameters
+Search: Use the search parameter to filter tasks. For example, http://localhost:3000?search=meeting filters tasks containing "meeting".
+Directory Structure
+bash
+Copy code
+/public
+  /data.json
+/src
+  /components
+    Todo.js
+    TodoForm.js
+    TodoList.js
+  App.js
+  index.js
+/App.css
+README.md
+Additional Information
+Styling: Custom styles are provided in App.css.
+Routing: Handled using react-router-dom for URL management and search functionality.
+Feel free to modify or extend the application as needed. For any issues or feature requests, please create an issue in the repository.
