@@ -48,6 +48,4 @@ Styling: Custom styles are provided in App.css.
 Routing: Handled using react-router-dom for URL management and search functionality.
 Feel free to modify or extend the application as needed. For any issues or feature requests, please create an issue in the repository.
 
-Verify that the gh-pages branch has the necessary files, and your GitHub Pages settings are configured to serve from the gh-pages branch.
-
 Deployed Link: venom1547.github.io/To-do
