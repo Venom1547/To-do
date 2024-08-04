@@ -50,4 +50,4 @@ Feel free to modify or extend the application as needed. For any issues or featu
 
 Verify that the gh-pages branch has the necessary files, and your GitHub Pages settings are configured to serve from the gh-pages branch.
 
-Deployed Link: www.venom1547.github.io/To-do
+Deployed Link: venom1547.github.io/To-do
