@@ -1,0 +1,25 @@
+
+[
+    {
+      "id": 1,
+      "text": "Buy groceries",
+      "isComplete": false,
+      "description": "",
+      "timestamp": ""
+    },
+    {
+      "id": 2,
+      "text": "Walk the dog",
+      "isComplete": false,
+      "description": "",
+      "timestamp": ""
+    },
+    {
+      "id": 3,
+      "text": "Meditation",
+      "isComplete": false,
+      "description": "",
+      "timestamp": ""
+    }
+  ]
+  
